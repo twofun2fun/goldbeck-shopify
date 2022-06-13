@@ -211,23 +211,23 @@
     </script>
   </head>
 
-  <div class="goldbeck-overlay">
-    <div class="goldback-overlay__logo">
-      <img src="../scss/img/logo2.png" alt="Logo Image">
-    </div>
-    <div class="goldbeck-overlay__content">
-      <h1>#WeAintYourRegularJeweler</h1>
-    </div>
-  </div>
-
   <body class="gradient">
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ "accessibility.skip_to_text" | t }}
     </a>
 
+    <div class="goldbeck-overlay js-goldbeck-overlay">
+      <div class="goldback-overlay__logo js-goldback-overlay__logo">
+        <img src="../assets/logo2.png" alt="Logo Image" />
+      </div>
+      <div class="goldbeck-overlay__is-hidden">
+        <h1 class="goldbeck-overlay__content">#WeAintYourRegularJeweler</h1>
+      </div>
+    </div>
+
     {% section 'announcement-bar' %}
     {% section 'header' %}
-    <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
+    <main id="MainContent" class="content-for-layout focus-none goldbeck-overlay__is-hidden js-main" role="main" tabindex="-1">
       {{ content_for_layout }}
     </main>
 
