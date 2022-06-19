@@ -1,0 +1,58 @@
+.goldbeck-product {
+  &__variant {
+    margin: 0;
+    margin-top: 4px;
+    border: none;
+    padding: 0;
+  }
+
+  &__select {
+    &::after {
+      margin-top: 6px;
+      border-bottom: 1px solid #333;
+      outline: none;
+      z-index: 2;
+    }
+  }
+}
+
+.flex-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+ul li {
+  padding: 1.5rem;
+  font-size: 12px;
+}
+
+.flex-container ul li {
+  border-bottom: 1px solid #333;
+}
+
+.select:after {
+  display: none;
+}
+
+.select__select {
+  &:focus {
+    outline: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  &:after {
+    border: none;
+    outline: none;
+  }
+}
+
+.product-form__input--dropdown {
+  margin: 0;
+}
